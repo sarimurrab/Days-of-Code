@@ -38,7 +38,7 @@ void print(node * root)
     return;
     
     print(root->left);
-    cout<<root->data;
+    cout<<root->data<<" ";
     print(root->right);
 }
 
@@ -74,7 +74,7 @@ void print_all_level(node * root)
     return;
 
     int h = height(root);
-    for(int i=1;i<=h;i++)
+    for(int i=h;i>=1;i--)
     {
         print_at_level(root,i);
         cout<<endl;
@@ -87,9 +87,22 @@ void print_all_level(node * root)
 int main()
 {
     node * root = build_bt();
-    print(root);
+    cout<<"Inorder Traversal :";print(root);
 
     cout<<endl;
 
     print_all_level(root);
 }
+
+
+/*
+INPUT:
+1 2 4 -1 -1 -1 3 -1 5 -1 -1
+
+Representation:
+
+        1
+    2       3
+ 4              5
+
+ */
