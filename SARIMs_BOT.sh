@@ -1,3 +1,4 @@
 git add .
-git commit -m "commit by SARIMs BOT on ${date}"
+$ Now=$(date +"%d-%m-%y")
+git commit -m "commit by SARIMs BOT on ${Now}"
 git push -u origin main
