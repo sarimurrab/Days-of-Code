@@ -71,15 +71,13 @@ void newline_bfs(node *root)
     {
         if (q.front() == NULL)
         {
-            node * save = q.front();
+            node *save = q.front();
             q.pop();
-            if(!q.empty())
+            if (!q.empty())
             {
-                cout<<endl;
+                cout << endl;
                 q.push(NULL);
-
             }
-
         }
         else
         {
