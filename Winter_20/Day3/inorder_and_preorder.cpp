@@ -14,14 +14,12 @@ public:
     }
 };
 
-
-int height(node * root)
+int height(node *root)
 {
-    if(root==NULL)
-    return 0;
+    if (root == NULL)
+        return 0;
 
-
-    return max(height(root->left),height(root->right))+1;
+    return max(height(root->left), height(root->right)) + 1;
 }
 node *build_BT()
 {
@@ -37,20 +35,20 @@ node *build_BT()
     return root;
 }
 
-node * from_in_and_pre(int * in , int * pre, int s, int e)
+node *from_in_and_pre(int *in, int *pre, int s, int e)
 {
-    static int i=0;
-    if(s>e)
-    return NULL;
-    
+    static int i = 0;
+    if (s > e)
+        return NULL;
+
     // root node -- pre key starting mai hoga
-    node * root = new node(pre[i]);
+    node *root = new node(pre[i]);
 
     //Now I will  be looking for for that value in inorder
-    int index =-1;
-    for(int j=s;j<=e;j++)
+    int index = -1;
+    for (int j = s; j <= e; j++)
     {
-        if(in[j]==pre[i])
+        if (in[j] == pre[i])
         {
             index = j;
             break;
@@ -58,43 +56,36 @@ node * from_in_and_pre(int * in , int * pre, int s, int e)
     }
     i++;
     // left and right sub tree bnaaye
-    root->left = from_in_and_pre(in, pre, s, index-1);
-    root->right = from_in_and_pre(in,pre,index+1,e);
+    root->left = from_in_and_pre(in, pre, s, index - 1);
+    root->right = from_in_and_pre(in, pre, index + 1, e);
 
     return root;
-    
 }
 
-
-
-void print_at_level(node * root,int k)
+void print_at_level(node *root, int k)
 {
-    if(root==NULL)
-    return;
+    if (root == NULL)
+        return;
 
-    if(k==1)
+    if (k == 1)
     {
-    cout<<root->data<<" ";
-    return;
+        cout << root->data << " ";
+        return;
     }
 
-    print_at_level(root->left,k-1);
-    print_at_level(root->right,k-1);
-
-
+    print_at_level(root->left, k - 1);
+    print_at_level(root->right, k - 1);
 }
 
-
-
-void print_all_levels(node * root)
+void print_all_levels(node *root)
 {
-    if(root==NULL)
-    return;
+    if (root == NULL)
+        return;
 
     int h = height(root);
-    for(int i=0;i<=h;i++)
+    for (int i = 0; i <= h; i++)
     {
-        print_at_level(root,i);
+        print_at_level(root, i);
     }
 }
 
@@ -108,24 +99,48 @@ void print(node *root)
     print(root->right);
 }
 
+void bfs(node *root)
+{
+    queue<node *> q;
+    q.push(root);
 
-void 
+    while (!q.empty())
+    {
+        int n = q.size();
+        for (int i = 0; i <=n-1; i++)
+        {
+            node *save = q.front();
+            q.pop();
+
+            if(i==n-1)
+            cout << save->data << " ";
+
+            if (save->left)
+                q.push(save->left);
+
+            if (save->right)
+                q.push(save->right);
+        }
+    }
+}
+
 
 int main()
 {
 
     node *root = build_BT();
-    
-    int in[] = { 4, 2, 5, 1, 3, 6 }; 
-    int pre[] = { 1, 2, 4, 5, 3, 6 };
-    // node * root = from_in_and_pre(in,pre,0,5);
-    // print(root);
-
-    print_all_levels(root);
+    bfs(root);
 }
 
 /*
 INPUT:
+
+
+int in[] = { 4, 2, 5, 1, 3, 6 }; 
+int pre[] = { 1, 2, 4, 5, 3, 6 };
+
+
+
 
 
 1 2 4 -1 -1 -1 3 -1 5 -1 -1
