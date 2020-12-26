@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLex Box</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            /*horizontally center */
+            justify-content: space-around;
+            /* horizonatlly space in between*/
+            align-items: center;
+            /*vertically center */
+            align-items: flex-end;
+            align-items: stretch;
+            /* vertically space in between*/
+
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            margin: 2px;
+            padding: 1%;
+            border: 2px solid green;
+
+        }
+
+        #item-1 {
+            /* order: 1;
+            flex-grow: 2; */
+            flex-basis: 300px;
+            /* if direcn = row->width, if direction = column-->height */
+        }
+
+        #item-2 {
+            align-self: flex-start;
+        }
+
+        #item-3 {
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Box</h1>
+    <div class="container">
+        <div class="item" id="item-1">Flex Box 1</div>
+        <div class="item" id="item-2">Flex Box 2</div>
+        <div class="item" id="item-3">Flex Box 3</div>
+        <!-- <div class="item" id="item-4">Flex Box 4</div>
+        <div class="item" id="item-5">Flex Box 5</div>
+        <div class="item" id="item-6">Flex Box 6</div> -->
+
+
+
+    </div>
+</body>
+
+</html>
