@@ -18,5 +18,19 @@ h1 {
 }
 
 img.priyanka-chopra-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
     border:#FFD166 5px dotted ;
+    opacity: 80%;
+    width: 200px;
+}
+
+div p.summary-heading {
+    font-size: 1.5rem;
+    color:#FFD166;
+}
+div {
+    background-color: indianred;
 }
