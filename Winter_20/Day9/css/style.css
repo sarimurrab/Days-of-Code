@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: strong;
     font-family:'Trebuchet MS';
     text-align: center;
@@ -41,4 +41,34 @@ div ul {
     line-height: 1.3rem;
     color: yellow;
 }
+div ul:hover {
+    background-color: rgb(118, 202, 235);
+    line-height: 1.3rem;
+    color: rgb(1, 14, 2);
+    font-weight: bold ;
+    border:whitesmoke 5px;
+}
 
+div.signature-container {
+    text-align: right;
+    margin-right: 2rem;
+}
+
+div h2.signature-text {
+    font-size: 1.7rem;
+}
+div img.signature-image {
+    width: 130px;
+    background:white;
+}
+
+
+p {
+    font-size: 1.2rem;
+    background-color: blueviolet;
+}
+
+p:hover {
+    font-size: 1.2rem;
+    background-color: whitesmoke;
+}
