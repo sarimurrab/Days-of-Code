@@ -27,10 +27,18 @@ img.priyanka-chopra-image {
     width: 200px;
 }
 
+
+div.about-summary {
+    background-color: #8B60D0;
+}
 div p.summary-heading {
-    font-size: 1.5rem;
-    color:#FFD166;
+    font-size: 1.7rem;
+    color:white;
+    background-color: indigo;
 }
-div {
-    background-color: indianred;
+div ul {
+    background-color: indigo;
+    line-height: 1.3rem;
+    color: yellow;
 }
+
