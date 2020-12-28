@@ -12,9 +12,9 @@ h1 {
 }
 
 .source {
-    text-align: center;
+    text-align: right;
     font-size: 0.9rem;
-    background-color: #FFD166;
+    /* background-color: #FFD166; */
 }
 
 img.priyanka-chopra-image {
@@ -38,12 +38,12 @@ div p.summary-heading {
 }
 div ul {
     background-color: indigo;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     color: yellow;
 }
 div ul:hover {
     background-color: rgb(118, 202, 235);
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     color: rgb(1, 14, 2);
     font-weight: bold ;
     border:whitesmoke 5px;
