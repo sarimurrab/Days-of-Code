@@ -1,0 +1,22 @@
+body {
+    background-color: #8B60D0;
+    font-family: cursive;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: strong;
+    font-family:'Trebuchet MS';
+    text-align: center;
+    color: #82074A;
+}
+
+.source {
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: #FFD166;
+}
+
+img.priyanka-chopra-image {
+    border:#FFD166 5px dotted ;
+}
