@@ -1,0 +1,39 @@
+nav {
+    
+    width: 15%;
+    /* border: 4px red solid; */
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    
+}
+
+nav ul {
+    /* border: 4px green solid; */
+    list-style-type:none;
+    padding-left: 0rem;
+    margin: 0;
+    
+    
+
+}
+
+nav li {
+    border: 4px indigo solid;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: brown;
+    color:cornsilk
+    
+}
+nav li:hover {
+    border: 4px green solid; 
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: black;
+    color: khaki;
+}
+nav ul li.last-list-item {
+    margin-bottom: 0rem;
+    
+}
