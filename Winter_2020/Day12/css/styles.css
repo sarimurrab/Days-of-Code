@@ -113,3 +113,7 @@ section img {
     border-radius: 2rem;
 }
 
+body {
+    padding-left: 10%;
+    padding-right: 10%;
+}
