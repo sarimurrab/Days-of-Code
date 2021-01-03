@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+nav {
+    /* border: 3px red solid; */
+    width: 22%;
+    text-align: center;
+}
+
+section {
+    /* border: 3px blue solid; */
+    width: 70%;
+}
+
+.aboutme, .myblogstitle {
+    border: 3px black solid;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+nav img {
+    width: 60%;
+    height: 33%;
+    margin-top: 1rem;
+    /* border: 3px red dashed; */
+}
+
+.name {
+    font-size: 1.3rem;
+    /* border: 2px red dashed; */
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    margin-top: 0;
+    /* border: 2px red dashed; */
+    font-size: 1rem;
+}
+
+.link {
+    border: none;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-left: 5%;
+    text-align: center;
+}
+
+blog {
+    display: flex;
+    /* border: 2px brown dashed; */
+    margin: 0.5rem;
+    
+}
+
+blog img {
+    width: 25%;
+    height: 20%
+}
+right {
+    border-top: 1px brown dashed;
+    width: 70%;
+    margin-left: 1rem;
+}
+
+right h2 {
+    /* border: 2px red dashed; */
+    text-align: left;
+    margin-top: 0.2rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+right p {
+    /* border: 2px red dashed; */
+    margin-top: 0;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+section h2.myblogstitle {
+    font-size: 2.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h3.link-content {
+    /* border: 2px red solid; */
+    margin:0;
+    margin-bottom: 0.4rem;
+    background-color: rgb(211, 202, 202);
+    color: black);
+}
+/* h3.link-content:hover {
+    /* border: 2px red solid; */
+    background-color: black;
+    color: white;
+} */
