@@ -1,5 +1,5 @@
 # Design
-![](Start-Design.png)
+![](Starting-Design.png)
 
 # Output
 ![](Final-Product.png)
