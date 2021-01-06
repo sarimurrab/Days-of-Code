@@ -1,0 +1,9 @@
+figure {
+    height: 300px;
+    width: 300px;
+    
+}
+activity {
+    display:flex ;
+    flex-wrap: wrap;
+}
