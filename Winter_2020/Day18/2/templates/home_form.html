@@ -1,0 +1,25 @@
+<h1>Hello, Welcome to new world registration</h1>
+
+
+<form method="POST">
+
+    {{form.hidden_tag()}}
+    {{form.name.label }} {{ form.name }}
+    <br />
+
+    {{form.adult.label}} {{form.adult}}
+    <br />
+
+    {{ form.gender.label}} {{form.gender}}
+    <br />
+
+    {{form.feedback.label}}
+    <br />
+    {{form.feedback}}
+
+    <br />
+
+    {{form.submit}}
+
+
+</form>
