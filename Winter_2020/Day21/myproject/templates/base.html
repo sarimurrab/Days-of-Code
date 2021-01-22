@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Site</title>
+</head>
+
+<body>
+    <nav>
+        <h1>This is Puppy Site</h1>
+        <a href="{{url_for('index')}}">HOME</a> <br /><br />
+        <a href="{{url_for('add_pup')}}">ADD Puppy</a> &nbsp;&nbsp;&nbsp;
+        <a href="{{url_for('del_pup')}}">Delete Puppy</a> &nbsp;&nbsp;&nbsp;
+        <a href="{{url_for('list_pup')}}">Show Puppy</a> &nbsp;&nbsp;&nbsp;
+        <a href="{{url_for('add_owner')}}">Add Owner</a> <br />
+    </nav>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    {% block base %}
+
+    {% endblock %}
+
+
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer>
+        <h3>Footer</h3>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block base %}
+
+
+<ul>
+    {% for pup in puppies %}
+    <li>ID: {{ pup.id}}, Name: {{pup.name}}, Owner: {{pup.owner.name}}</li>
+    {% endfor %}
+</ul>
+
+
+
+
+{% endblock %}
