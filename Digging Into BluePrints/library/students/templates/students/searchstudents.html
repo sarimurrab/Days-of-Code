@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block students %}
+<h1>Search Students</h1>
+<form method="post">
+    {{form.hidden_tag()}}
+    {{form.student_name.label}} {{form.student_name}} <br>
+    {{form.student_roll.label}} {{form.student_roll}} <br>
+    {{form.search_student}}
+
+
+</form>
+{% endblock %}

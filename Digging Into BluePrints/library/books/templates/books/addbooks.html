@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{% block books %}
+<h1>Add Books</h1>
+<form method="post">
+    {{form.hidden_tag()}}
+    {{form.book_name.label}} {{form.book_name}} <br>
+    {{form.author_name.label}} {{form.author_name}} <br>
+    {{form.isbn_number.label}} {{form.isbn_number}} <br>
+    {{form.student_id.label}} {{form.student_id}} <br>
+    {{form.add_book}}
+
+
+</form>    
+{% endblock %}
